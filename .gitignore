@@ -3,3 +3,4 @@ first
 .terraform.tfstate*
 terraform.tfstate*
 .terraform*
+ip_addresses.txt
