@@ -6,6 +6,10 @@ variable "AWS_REGION" {
     default = "eu-west-1"
 }
 
+variable "AWS_SUBNET_ID" {
+    default = "subnet-72749c15"
+}
+
 variable "AMIS" {
     type = "map"
     default = {

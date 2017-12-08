@@ -3,7 +3,7 @@
 resource "aws_instance" "test1" {
     ami           = "${lookup(var.AMIS, var.AWS_REGION)}"
     instance_type = "t2.micro"
-    subnet_id     = "subnet-72749c15"
+    subnet_id     = "${var.AWS_SUBNET_ID}"
 }
 
 resource "aws_eip" "ip" {
