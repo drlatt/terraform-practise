@@ -1,9 +1,9 @@
 # instance properties
 
 resource "aws_instance" "test1" {
-  ami           = "${lookup(var.AMIS, var.AWS_REGION)}"
+  ami           = "${lookup(var.amis, var.aws_region)}"
   instance_type = "t2.micro"
-  subnet_id     = "${var.AWS_SUBNET_ID}"
+  subnet_id     = "${var.aws_subnet_id}"
 
   # use the local-exec provisioner to run commands locally
   provisioner "local-exec" {
